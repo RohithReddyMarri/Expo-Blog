@@ -18,7 +18,7 @@
     "href": "posts/visualisation.html",
     "title": "Simple Visualisation",
     "section": "",
-    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n%matplotlib inline\n%config InlineBackend.figure_format = 'retina'\n\n\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\nplt.plot(x, y)"
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n%matplotlib inline\n%config InlineBackend.figure_format = 'retina'\n\n\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\nplt.plot(x, y)\n\n\n\n\n\n\n\n\n\nprint(\"Hello World1\")\n\n\nprint(67358478498)"
   },
   {
     "objectID": "index.html",
