@@ -16,9 +16,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to My Expo Blog",
+    "title": "Welcome to Exposition Article on GridSpec",
     "section": "",
-    "text": "Explore matplotlib.GridSpec. Click the navigation links above to get started!"
+    "text": "Welcome to Exposition Article on matplotlib.GridSpec\nExplore matplotlib.GridSpec — a tool for creating flexible subplot layouts.\nClick the navigation links above to get started!"
   },
   {
     "objectID": "gridspec_use_cases 5.html",
@@ -33,20 +33,6 @@
     "title": "Use Cases",
     "section": "",
     "text": "Data Visualization Dashboards:\n\nCreating dashboards with multiple charts arranged in custom layouts.\n\nVisualizing different aspects of a dataset within a single figure.\n\nUsing grids to balance aesthetics and readability.\n\nComparative Analysis:\n\nDisplaying side-by-side visual comparisons of datasets.\n\nHighlighting trends and differences using subplot grids.\n\nCustomizing subplot sizes to emphasize key comparisons.\n\nNested Layouts for Complex Visuals:\n\nEmbedding nested grids within larger plots for detailed analysis.\n\nOrganizing visual elements into primary and secondary sections.\n\nDisplaying both overview and detailed plots within a single figure.\n\nCustom Report Figures:\n\nDesigning publication-quality figures with controlled subplots.\n\nEnsuring clarity by adjusting spacing between plots.\n\nExporting figures suitable for academic reports and presentations.\n\nMultimedia and Mixed Content:\n\nCombining plots, tables, and images in a single figure.\n\nArranging diverse content types with consistent alignment.\n\nIntegrating annotations, legends, and multimedia elements within the layout."
-  },
-  {
-    "objectID": "posts/matplotlib_gridspec_with_installation 3.html",
-    "href": "posts/matplotlib_gridspec_with_installation 3.html",
-    "title": "Introduction and Installation",
-    "section": "",
-    "text": "Matplotlib is a powerful library for creating visualizations in Python. One of its advanced features is GridSpec, which allows for precise control over subplot layouts. Unlike plt.subplots(), GridSpec offers greater flexibility, enabling plots to span multiple rows or columns.\n\n\n\nFlexible Layouts: Easily arrange subplots in complex configurations.\nPrecise Positioning: Control the exact size and location of each subplot.\nSpanning Capability: Combine multiple grid cells into a single plot.\n\n\n\n\nA GridSpec is created by specifying the number of rows and columns. Each subplot is placed within this grid using its row and column indices. Additionally, subplots can span multiple rows or columns, allowing for dynamic and creative layouts.\nIn the next section, we will explore practical examples of using Matplotlib.GridSpec to create visually appealing and well-structured plots.\n\n\n\nTo use Matplotlib.GridSpec, you need to install the matplotlib library. Here are different ways to install it:\n\n\npip install matplotlib\n\n\n\nconda install matplotlib\n\n\n\n!pip install matplotlib\nAfter installing, you can start using GridSpec by importing the library as follows:\nimport matplotlib.pyplot as plt\nfrom matplotlib.gridspec import GridSpec"
-  },
-  {
-    "objectID": "posts/matplotlib_gridspec_with_installation 3.html#installation-guide",
-    "href": "posts/matplotlib_gridspec_with_installation 3.html#installation-guide",
-    "title": "Introduction and Installation",
-    "section": "",
-    "text": "To use Matplotlib.GridSpec, you need to install the matplotlib library. Here are different ways to install it:\n\n\npip install matplotlib\n\n\n\nconda install matplotlib\n\n\n\n!pip install matplotlib\nAfter installing, you can start using GridSpec by importing the library as follows:\nimport matplotlib.pyplot as plt\nfrom matplotlib.gridspec import GridSpec"
   },
   {
     "objectID": "matplotlib_gridspec_key_features 4.html",
@@ -102,7 +88,7 @@
     "href": "matplotlib_gridspec_with_installation 3.html",
     "title": "Introduction and Installation",
     "section": "",
-    "text": "Matplotlib is a powerful library for creating visualizations in Python. One of its advanced features is GridSpec, which allows for precise control over subplot layouts. Unlike plt.subplots(), GridSpec offers greater flexibility, enabling plots to span multiple rows or columns.\n\n\n\nFlexible Layouts: Easily arrange subplots in complex configurations.\nPrecise Positioning: Control the exact size and location of each subplot.\nSpanning Capability: Combine multiple grid cells into a single plot.\n\n\n\n\nA GridSpec is created by specifying the number of rows and columns. Each subplot is placed within this grid using its row and column indices. Additionally, subplots can span multiple rows or columns, allowing for dynamic and creative layouts.\nIn the next section, we will explore practical examples of using Matplotlib.GridSpec to create visually appealing and well-structured plots.\n\n\n\nTo use Matplotlib.GridSpec, you need to install the matplotlib library. Here are different ways to install it:\n\n\npip install matplotlib\n\n\n\nconda install matplotlib\n\n\n\n!pip install matplotlib\nAfter installing, you can start using GridSpec by importing the library as follows:\nimport matplotlib.pyplot as plt\nfrom matplotlib.gridspec import GridSpec"
+    "text": "Matplotlib is a powerful library for creating visualizations in Python. One of its advanced features is GridSpec, which allows for precise control over subplot layouts. Unlike plt.subplots(), GridSpec offers greater flexibility, enabling plots to span multiple rows or columns.\n\n\n\nFlexible Layouts: Easily arrange subplots in complex configurations.\nPrecise Positioning: Control the exact size and location of each subplot.\nSpanning Capability: Combine multiple grid cells into a single plot.\n\n\n\n\nA GridSpec is created by specifying the number of rows and columns. Each subplot is placed within this grid using its row and column indices. Additionally, subplots can span multiple rows or columns, allowing for dynamic and creative layouts.\n\n\n\nTo use Matplotlib.GridSpec, you need to install the matplotlib library. Here are different ways to install it:\n\n\npip install matplotlib\n\n\n\nconda install matplotlib\n\n\n\n!pip install matplotlib\nAfter installing, you can start using GridSpec by importing the library as follows:\nimport matplotlib.pyplot as plt\nfrom matplotlib.gridspec import GridSpec"
   },
   {
     "objectID": "matplotlib_gridspec_with_installation 3.html#installation-guide",
