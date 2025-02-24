@@ -96,12 +96,5 @@
     "title": "Use Cases",
     "section": "",
     "text": "Data Visualization Dashboards:\n\nCreating dashboards with multiple charts arranged in custom layouts.\n\nVisualizing different aspects of a dataset within a single figure.\n\nUsing grids to balance aesthetics and readability.\n\nComparative Analysis:\n\nDisplaying side-by-side visual comparisons of datasets.\n\nHighlighting trends and differences using subplot grids.\n\nCustomizing subplot sizes to emphasize key comparisons.\n\nNested Layouts for Complex Visuals:\n\nEmbedding nested grids within larger plots for detailed analysis.\n\nOrganizing visual elements into primary and secondary sections.\n\nDisplaying both overview and detailed plots within a single figure.\n\nCustom Report Figures:\n\nDesigning publication-quality figures with controlled subplots.\n\nEnsuring clarity by adjusting spacing between plots.\n\nExporting figures suitable for academic reports and presentations.\n\nMultimedia and Mixed Content:\n\nCombining plots, tables, and images in a single figure.\n\nArranging diverse content types with consistent alignment.\n\nIntegrating annotations, legends, and multimedia elements within the layout."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Quarto Template",
-    "section": "",
-    "text": "Content !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAssignment 3\n\n\n\n\n\n\n\n\n\n\n\nFeb 14, 2025\n\n\nNipun Batra\n\n\n\n\n\n\n\n\n\n\n\n\nSimple Visualisation\n\n\n\n\n\n\nML\n\n\n\n\n\n\n\n\n\nFeb 14, 2025\n\n\nNipun Batra\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome\n\n\n\n\n\nWelcome Post\n\n\n\n\n\nFeb 14, 2025\n\n\nNipun Batra\n\n\n\n\n\n\nNo matching items"
   }
 ]
