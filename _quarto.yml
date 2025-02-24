@@ -6,8 +6,6 @@ website:
   title: "Matplotlib.Gridspec"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - href: matplotlib_gridspec_with_installation 3.ipynb
         text: HOME
       - href: matplotlib_gridspec_key_features 4.ipynb
