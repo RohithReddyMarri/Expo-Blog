@@ -6,12 +6,12 @@ website:
   title: "Matplotlib.Gridspec"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - href: blog.qmd
-        text: Blog
-      - href: J089_Lab1_Numpy-checkpoint.ipynb
-        text: Assignment 
+      - href: matplotlib_gridspec_with_installation 3.ipynb
+        text: HOME
+      - href: matplotlib_gridspec_key_features 4.ipynb
+        text: Key Features
+      - href: gridspec_use_cases 5.ipynb
+        text: Use Cases 
 
 
 format:
@@ -23,6 +23,9 @@ format:
     code-copy: true
     code-overflow: wrap
 
+website:
+  page-footer:
+    center: "© J089"
 
 execute:
   freeze: auto
