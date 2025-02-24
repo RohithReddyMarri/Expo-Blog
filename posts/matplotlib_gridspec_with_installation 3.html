@@ -6,10 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nipun Batra">
-<meta name="dcterms.date" content="2025-02-14">
+<meta name="author" content="Rohith Reddy Marri">
+<meta name="author" content="Vunnam Thushar Chowdary">
+<meta name="author" content="Gugulothu Sai Siddhu">
+<meta name="dcterms.date" content="2025-02-25">
 
-<title>Simple Visualisation – Matplotlib.Gridspec</title>
+<title>Introduction and Installation – Matplotlib.Gridspec</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -146,35 +148,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-matplotlib.gridspec" id="toc-introduction-to-matplotlib.gridspec" class="nav-link active" data-scroll-target="#introduction-to-matplotlib.gridspec">Introduction to Matplotlib.GridSpec</a>
+  <ul class="collapse">
+  <li><a href="#why-use-gridspec" id="toc-why-use-gridspec" class="nav-link" data-scroll-target="#why-use-gridspec">Why Use GridSpec?</a></li>
+  <li><a href="#basic-structure" id="toc-basic-structure" class="nav-link" data-scroll-target="#basic-structure">Basic Structure</a></li>
+  <li><a href="#installation-guide" id="toc-installation-guide" class="nav-link" data-scroll-target="#installation-guide">Installation Guide</a>
+  <ul class="collapse">
+  <li><a href="#using-pip-recommended" id="toc-using-pip-recommended" class="nav-link" data-scroll-target="#using-pip-recommended">1. Using pip (Recommended)</a></li>
+  <li><a href="#using-conda-for-anaconda-users" id="toc-using-conda-for-anaconda-users" class="nav-link" data-scroll-target="#using-conda-for-anaconda-users">2. Using conda (For Anaconda Users)</a></li>
+  <li><a href="#installing-within-a-jupyter-notebook" id="toc-installing-within-a-jupyter-notebook" class="nav-link" data-scroll-target="#installing-within-a-jupyter-notebook">3. Installing within a Jupyter Notebook</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Simple Visualisation</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">ML</div>
-  </div>
-  </div>
+<h1 class="title">Introduction and Installation</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
-             <p>Nipun Batra </p>
+             <p>Rohith Reddy Marri <a href="mailto:24110303@iitgn.ac.in" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p>Vunnam Thushar Chowdary <a href="mailto:24110393@iitgn.ac.in" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p>Gugulothu Sai Siddhu <a href="mailto:24110124@iitgn.ac.in" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 14, 2025</p>
+      <p class="date">February 25, 2025</p>
     </div>
   </div>
   
@@ -186,40 +203,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="cell-1" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>config InlineBackend.figure_format <span class="op">=</span> <span class="st">'retina'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="cell-2" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">100</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.sin(x)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>plt.plot(y,x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="visualisation_files/figure-html/cell-3-output-1.png" width="543" height="413" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<div id="cell-3" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello World1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Hello World1</code></pre>
-</div>
-</div>
-<div id="cell-4" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="dv">67358478498</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>67358478498</code></pre>
-</div>
-</div>
-<p>My name is Billa</p>
+<section id="introduction-to-matplotlib.gridspec" class="level1">
+<h1>Introduction to Matplotlib.GridSpec</h1>
+<p>Matplotlib is a powerful library for creating visualizations in Python. One of its advanced features is <strong>GridSpec</strong>, which allows for precise control over subplot layouts. Unlike <code>plt.subplots()</code>, <code>GridSpec</code> offers greater flexibility, enabling plots to span multiple rows or columns.</p>
+<section id="why-use-gridspec" class="level3">
+<h3 class="anchored" data-anchor-id="why-use-gridspec">Why Use GridSpec?</h3>
+<ul>
+<li><strong>Flexible Layouts:</strong> Easily arrange subplots in complex configurations.</li>
+<li><strong>Precise Positioning:</strong> Control the exact size and location of each subplot.</li>
+<li><strong>Spanning Capability:</strong> Combine multiple grid cells into a single plot.</li>
+</ul>
+</section>
+<section id="basic-structure" class="level3">
+<h3 class="anchored" data-anchor-id="basic-structure">Basic Structure</h3>
+<p>A <code>GridSpec</code> is created by specifying the number of rows and columns. Each subplot is placed within this grid using its row and column indices. Additionally, subplots can span multiple rows or columns, allowing for dynamic and creative layouts.</p>
+<p>In the next section, we will explore practical examples of using <code>Matplotlib.GridSpec</code> to create visually appealing and well-structured plots.</p>
+</section>
+<section id="installation-guide" class="level2">
+<h2 class="anchored" data-anchor-id="installation-guide">Installation Guide</h2>
+<p>To use <code>Matplotlib.GridSpec</code>, you need to install the <code>matplotlib</code> library. Here are different ways to install it:</p>
+<section id="using-pip-recommended" class="level3">
+<h3 class="anchored" data-anchor-id="using-pip-recommended">1. Using pip (Recommended)</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install matplotlib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="using-conda-for-anaconda-users" class="level3">
+<h3 class="anchored" data-anchor-id="using-conda-for-anaconda-users">2. Using conda (For Anaconda Users)</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install matplotlib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="installing-within-a-jupyter-notebook" class="level3">
+<h3 class="anchored" data-anchor-id="installing-within-a-jupyter-notebook">3. Installing within a Jupyter Notebook</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install matplotlib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>After installing, you can start using <code>GridSpec</code> by importing the library as follows:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.gridspec <span class="im">import</span> GridSpec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
