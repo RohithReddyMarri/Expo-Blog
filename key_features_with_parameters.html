@@ -11,7 +11,7 @@
 <meta name="author" content="Gugulothu Sai Siddhu">
 <meta name="dcterms.date" content="2025-02-25">
 
-<title>Key Features – Matplotlib.Gridspec</title>
+<title>Key Features and Parameters – Matplotlib.Gridspec</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,7 +130,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./key_features_with_parameters.html"> 
+    <a class="nav-link active" href="./key_features_with_parameters.html" aria-current="page"> 
 <span class="menu-text">Key Features</span></a>
   </li>  
   <li class="nav-item">
@@ -161,17 +161,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#key-features-explanation-of-matplotlib.gridspec" id="toc-key-features-explanation-of-matplotlib.gridspec" class="nav-link active" data-scroll-target="#key-features-explanation-of-matplotlib.gridspec">Key Features &amp; Explanation of Matplotlib.GridSpec</a>
+  <li><a href="#key-features-of-matplotlib.gridspec" id="toc-key-features-of-matplotlib.gridspec" class="nav-link active" data-scroll-target="#key-features-of-matplotlib.gridspec">Key Features of <code>matplotlib.GridSpec</code></a>
   <ul class="collapse">
-  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  <li><a href="#main-features" id="toc-main-features" class="nav-link" data-scroll-target="#main-features">Main Features:</a></li>
   <li><a href="#explanation" id="toc-explanation" class="nav-link" data-scroll-target="#explanation">Explanation</a></li>
   </ul></li>
-  <li><a href="#matplotlib.gridspec-examples" id="toc-matplotlib.gridspec-examples" class="nav-link" data-scroll-target="#matplotlib.gridspec-examples">Matplotlib.GridSpec Examples</a>
+  <li><a href="#parameters-of-gridspec" id="toc-parameters-of-gridspec" class="nav-link" data-scroll-target="#parameters-of-gridspec">Parameters of <code>GridSpec</code></a>
   <ul class="collapse">
-  <li><a href="#example-1-basic-2x2-grid-layout" id="toc-example-1-basic-2x2-grid-layout" class="nav-link" data-scroll-target="#example-1-basic-2x2-grid-layout">Example 1: Basic 2x2 Grid Layout</a></li>
-  <li><a href="#example-2-spanning-multiple-cells" id="toc-example-2-spanning-multiple-cells" class="nav-link" data-scroll-target="#example-2-spanning-multiple-cells">Example 2: Spanning Multiple Cells</a></li>
-  <li><a href="#example-3-adjusting-spacing" id="toc-example-3-adjusting-spacing" class="nav-link" data-scroll-target="#example-3-adjusting-spacing">Example 3: Adjusting Spacing</a></li>
-  <li><a href="#example-4-nested-grids-and-spanning" id="toc-example-4-nested-grids-and-spanning" class="nav-link" data-scroll-target="#example-4-nested-grids-and-spanning">Example 4: Nested grids and spanning</a></li>
+  <li><a href="#additional-notes" id="toc-additional-notes" class="nav-link" data-scroll-target="#additional-notes">Additional Notes:</a></li>
+  <li><a href="#demonstrating-all-parameters-of-matplotlib.gridspec" id="toc-demonstrating-all-parameters-of-matplotlib.gridspec" class="nav-link" data-scroll-target="#demonstrating-all-parameters-of-matplotlib.gridspec">Demonstrating All Parameters of <code>matplotlib.GridSpec</code></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -181,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Key Features</h1>
+<h1 class="title">Key Features and Parameters</h1>
 </div>
 
 
@@ -212,46 +210,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="key-features-explanation-of-matplotlib.gridspec" class="level1">
-<h1>Key Features &amp; Explanation of Matplotlib.GridSpec</h1>
-<p><code>Matplotlib.GridSpec</code> offers advanced control over subplot layouts, making it easier to create complex visualizations. Here are its key features and how they work:</p>
-<section id="key-features" class="level2">
-<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
-<ol type="1">
-<li><strong>Flexible Layouts:</strong>
+<section id="key-features-of-matplotlib.gridspec" class="level2">
+<h2 class="anchored" data-anchor-id="key-features-of-matplotlib.gridspec">Key Features of <code>matplotlib.GridSpec</code></h2>
+<p>The <code>matplotlib.GridSpec</code> class offers extensive control over subplot layouts. Below are its key features and a comprehensive list of parameters with their functions.</p>
+<section id="main-features" class="level3">
+<h3 class="anchored" data-anchor-id="main-features">Main Features:</h3>
 <ul>
-<li>Arrange subplots in grids of any size (e.g., 2x2, 3x3, or custom configurations).</li>
-<li>Useful for visualizing multiple plots side by side.</li>
-</ul></li>
-<li><strong>Precise Positioning:</strong>
-<ul>
-<li>Control the exact location of each subplot using row and column indices.</li>
-<li>Align subplots with pixel-perfect accuracy.</li>
-</ul></li>
-<li><strong>Spanning Multiple Cells:</strong>
-<ul>
-<li>Allow plots to span multiple rows or columns, creating dynamic layouts.</li>
-<li>Ideal for dashboards and complex visual presentations.</li>
-</ul></li>
-<li><strong>Adjustable Gaps and Margins:</strong>
-<ul>
-<li>Customize spacing between subplots using <code>wspace</code> (width space) and <code>hspace</code> (height space).</li>
-<li>Optimize layouts to fit within limited space.</li>
-</ul></li>
-<li><strong>Nested Grids:</strong>
-<ul>
-<li>Create grids within grids using nested <code>GridSpec</code> objects.</li>
-<li>Useful for hierarchical visualizations and composite plots.</li>
-</ul></li>
-<li><strong>Compatibility with Subplot Functions:</strong>
-<ul>
-<li>Integrates seamlessly with <code>add_subplot()</code> and other subplot methods.</li>
-<li>Compatible with <code>Figure</code> objects for advanced customization.</li>
-</ul></li>
-</ol>
+<li>Allows flexible arrangement of subplots using customizable grids.</li>
+<li>Supports both fixed and relative sizing of grid cells.</li>
+<li>Enables nesting of grids within grids for complex layouts.</li>
+<li>Allows plots to span multiple grid cells, both horizontally and vertically.</li>
+<li>Fine-tunes spacing and alignment of subplots using adjustable padding and margins.</li>
+</ul>
 </section>
-<section id="explanation" class="level2">
-<h2 class="anchored" data-anchor-id="explanation">Explanation</h2>
+<section id="explanation" class="level3">
+<h3 class="anchored" data-anchor-id="explanation">Explanation</h3>
 <p>A <code>GridSpec</code> object is defined by specifying the number of rows and columns. Each cell in the grid is referenced using zero-based indexing, similar to arrays in Python.</p>
 <p>For example:<br>
 - <code>GridSpec(2, 2)</code> creates a 2x2 grid with four cells.<br>
@@ -260,163 +233,206 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 - <code>gs[0, :]</code> spans all columns in the first row.<br>
 - <code>gs[:, 0]</code> spans all rows in the first column.</p>
 <p>By combining these features, <code>Matplotlib.GridSpec</code> enables visually appealing layouts that are both flexible and precise.</p>
-<p>In the next section, we will explore practical examples demonstrating these features in action.</p>
 </section>
 </section>
-<section id="matplotlib.gridspec-examples" class="level1">
-<h1>Matplotlib.GridSpec Examples</h1>
-<section id="example-1-basic-2x2-grid-layout" class="level2">
-<h2 class="anchored" data-anchor-id="example-1-basic-2x2-grid-layout">Example 1: Basic 2x2 Grid Layout</h2>
-<p>This example creates a 2x2 grid with four subplots placed in individual cells.</p>
-<div id="7a492040" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import required libraries</span></span>
+<section id="parameters-of-gridspec" class="level2">
+<h2 class="anchored" data-anchor-id="parameters-of-gridspec">Parameters of <code>GridSpec</code></h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>nrows</code></td>
+<td>Number of rows in the grid.</td>
+</tr>
+<tr class="even">
+<td><code>ncols</code></td>
+<td>Number of columns in the grid.</td>
+</tr>
+<tr class="odd">
+<td><code>figure</code></td>
+<td>The figure object to which the grid belongs.</td>
+</tr>
+<tr class="even">
+<td><code>width_ratios</code></td>
+<td>Relative widths of the columns as a list.</td>
+</tr>
+<tr class="odd">
+<td><code>height_ratios</code></td>
+<td>Relative heights of the rows as a list.</td>
+</tr>
+<tr class="even">
+<td><code>wspace</code></td>
+<td>Horizontal spacing between columns as a fraction of the average column width.</td>
+</tr>
+<tr class="odd">
+<td><code>hspace</code></td>
+<td>Vertical spacing between rows as a fraction of the average row height.</td>
+</tr>
+<tr class="even">
+<td><code>left</code></td>
+<td>Left margin of the entire grid (0 to 1, as a fraction of the figure width).</td>
+</tr>
+<tr class="odd">
+<td><code>right</code></td>
+<td>Right margin of the entire grid.</td>
+</tr>
+<tr class="even">
+<td><code>top</code></td>
+<td>Top margin of the entire grid.</td>
+</tr>
+<tr class="odd">
+<td><code>bottom</code></td>
+<td>Bottom margin of the entire grid.</td>
+</tr>
+<tr class="even">
+<td><code>subplot_spec</code></td>
+<td>Allows nesting grids within grids by specifying a region in the parent grid.</td>
+</tr>
+<tr class="odd">
+<td><code>gridspec_kw</code></td>
+<td>Dictionary of additional keyword arguments passed to <code>GridSpec</code>.</td>
+</tr>
+</tbody>
+</table>
+<section id="additional-notes" class="level3">
+<h3 class="anchored" data-anchor-id="additional-notes">Additional Notes:</h3>
+<ul>
+<li><strong>Spacing:</strong> The <code>wspace</code> and <code>hspace</code> parameters control the spacing between subplots, influencing readability and aesthetics.</li>
+<li><strong>Margins:</strong> The <code>left</code>, <code>right</code>, <code>top</code>, and <code>bottom</code> parameters define the spacing between the grid and the figure’s edges, improving layout consistency.</li>
+<li><strong>Ratios:</strong> Using <code>width_ratios</code> and <code>height_ratios</code> allows for grids with cells of different sizes, offering greater flexibility in plot design.</li>
+<li><strong>Nested Layouts:</strong> By using <code>subplot_spec</code>, users can create nested grids for advanced layouts, enhancing the organization of complex visualizations.</li>
+</ul>
+</section>
+<section id="demonstrating-all-parameters-of-matplotlib.gridspec" class="level3">
+<h3 class="anchored" data-anchor-id="demonstrating-all-parameters-of-matplotlib.gridspec">Demonstrating All Parameters of <code>matplotlib.GridSpec</code></h3>
+<div id="5181c0d7" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing necessary libraries</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.gridspec <span class="im">import</span> GridSpec</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Basic Grid with 2x2 layout</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">6</span>))</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>ax1 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>, <span class="dv">0</span>])</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>, <span class="dv">1</span>])</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>ax3 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>, <span class="dv">0</span>])</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>ax4 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>, <span class="dv">1</span>])</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>ax1.plot([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>])</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>ax2.plot([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">9</span>, <span class="dv">4</span>, <span class="dv">1</span>])</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>ax3.bar([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>ax4.barh([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>])</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">"Line Plot 1"</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">"Line Plot 2"</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">"Bar Plot"</span>)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>ax4.set_title(<span class="st">"Horizontal Bar Plot"</span>)</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="matplotlib_gridspec_key_features 4_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
-</figure>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.gridspec <span class="im">import</span> GridSpec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
-</section>
-<section id="example-2-spanning-multiple-cells" class="level2">
-<h2 class="anchored" data-anchor-id="example-2-spanning-multiple-cells">Example 2: Spanning Multiple Cells</h2>
-<p>This example demonstrates how to create subplots that span multiple rows or columns.</p>
-<div id="2120f2d6" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Spanning multiple cells</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">6</span>))</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">3</span>, <span class="dv">3</span>, figure<span class="op">=</span>fig)</span>
+<section id="example-1-basic-grid-with-nrows-ncols-and-figure" class="level4">
+<h4 class="anchored" data-anchor-id="example-1-basic-grid-with-nrows-ncols-and-figure">Example 1: Basic Grid with <code>nrows</code>, <code>ncols</code>, and <code>figure</code></h4>
+<div id="09c4bd8b" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a figure with a 2x3 grid</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(nrows<span class="op">=</span><span class="dv">2</span>, ncols<span class="op">=</span><span class="dv">3</span>, figure<span class="op">=</span>fig)</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>ax1 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>, :])</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>:, <span class="dv">0</span>])</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>ax3 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>, <span class="dv">1</span>:])</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>ax4 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">2</span>, <span class="dv">1</span>:])</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>ax1.plot([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>], [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>])</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>ax2.plot([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>], [<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">0</span>])</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>ax3.plot([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>], [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>])</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>ax4.plot([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>], [<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>])</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">"Spanning Top Row"</span>)</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">"Spanning Left Column"</span>)</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">"Center Top"</span>)</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>ax4.set_title(<span class="st">"Center Bottom"</span>)</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding subplots</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        ax <span class="op">=</span> fig.add_subplot(gs[i, j])</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        ax.set_title(<span class="ss">f'Row </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">, Col </span><span class="sc">{</span>j<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="matplotlib_gridspec_key_features 4_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="key_features_with_parameters_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="example-3-adjusting-spacing" class="level2">
-<h2 class="anchored" data-anchor-id="example-3-adjusting-spacing">Example 3: Adjusting Spacing</h2>
-<p>This example demonstrates how to control the spacing between subplots using <code>wspace</code> (width space) and <code>hspace</code> (height space).</p>
-<div id="96e3db5e" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Adjusting spacing</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">6</span>))</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig, wspace<span class="op">=</span><span class="fl">0.4</span>, hspace<span class="op">=</span><span class="fl">0.6</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ax1 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>, <span class="dv">0</span>])</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>, <span class="dv">1</span>])</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>ax3 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>, <span class="dv">0</span>])</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>ax4 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>, <span class="dv">1</span>])</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>ax1.plot([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>])</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>ax2.plot([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>ax3.scatter([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>])</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>ax4.scatter([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">"Line Plot 3"</span>)</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">"Line Plot 4"</span>)</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">"Scatter Plot 1"</span>)</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>ax4.set_title(<span class="st">"Scatter Plot 2"</span>)</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>C:\Users\ROHIT REDDY MARRI\AppData\Local\Temp\ipykernel_18732\2879565373.py:20: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
-  plt.tight_layout()</code></pre>
-</div>
+<section id="example-2-using-width_ratios-and-height_ratios" class="level4">
+<h4 class="anchored" data-anchor-id="example-2-using-width_ratios-and-height_ratios">Example 2: Using <code>width_ratios</code> and <code>height_ratios</code></h4>
+<div id="cccb80eb" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(nrows<span class="op">=</span><span class="dv">2</span>, ncols<span class="op">=</span><span class="dv">3</span>, figure<span class="op">=</span>fig, width_ratios<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>], height_ratios<span class="op">=</span>[<span class="dv">2</span>, <span class="dv">1</span>])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        ax <span class="op">=</span> fig.add_subplot(gs[i, j])</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        ax.set_title(<span class="ss">f'Row </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">, Col </span><span class="sc">{</span>j<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="matplotlib_gridspec_key_features 4_files/figure-html/cell-4-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="key_features_with_parameters_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="example-4-nested-grids-and-spanning" class="level2">
-<h2 class="anchored" data-anchor-id="example-4-nested-grids-and-spanning">Example 4: Nested grids and spanning</h2>
-<p>This example combines multiple techniques:<br>
-- A large plot spanning the top row<br>
-- A nested grid within the lower part<br>
-- Mixed plot types for better visualization</p>
-<div id="d2e645e9" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Nested grids and spanning</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>),constrained_layout<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>outer_grid <span class="op">=</span> GridSpec(<span class="dv">3</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig, wspace<span class="op">=</span><span class="fl">0.5</span>, hspace<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Large plot spanning top row</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>ax_main <span class="op">=</span> fig.add_subplot(outer_grid[<span class="dv">0</span>, :])</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>ax_main.plot(<span class="bu">range</span>(<span class="dv">10</span>), [x<span class="op">**</span><span class="dv">2</span> <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>)])</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>ax_main.set_title(<span class="st">"Main Plot Spanning Top Row"</span>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Nested grid on bottom-left</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>inner_grid <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">1</span>, figure<span class="op">=</span>fig, height_ratios<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>])</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>ax_inner1 <span class="op">=</span> fig.add_subplot(inner_grid[<span class="dv">0</span>, <span class="dv">0</span>])</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>ax_inner2 <span class="op">=</span> fig.add_subplot(inner_grid[<span class="dv">1</span>, <span class="dv">0</span>])</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>ax_inner1.plot(<span class="bu">range</span>(<span class="dv">5</span>), [x <span class="op">+</span> <span class="dv">1</span> <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>)])</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>ax_inner1.set_title(<span class="st">"Nested Line Plot"</span>)</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>ax_inner2.bar(<span class="bu">range</span>(<span class="dv">5</span>), [<span class="dv">5</span> <span class="op">-</span> x <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>)])</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>ax_inner2.set_title(<span class="st">"Nested Bar Plot"</span>)</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Regular subplot on bottom-right</span></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>ax_side <span class="op">=</span> fig.add_subplot(outer_grid[<span class="dv">1</span>:, <span class="dv">1</span>])</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>ax_side.scatter(<span class="bu">range</span>(<span class="dv">10</span>), [x<span class="op">**</span><span class="fl">0.5</span> <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>)])</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>ax_side.set_title(<span class="st">"Scatter Plot on Right"</span>)</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="example-3-controlling-spacing-with-wspace-and-hspace" class="level4">
+<h4 class="anchored" data-anchor-id="example-3-controlling-spacing-with-wspace-and-hspace">Example 3: Controlling Spacing with <code>wspace</code> and <code>hspace</code></h4>
+<div id="72bb5385" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(nrows<span class="op">=</span><span class="dv">2</span>, ncols<span class="op">=</span><span class="dv">3</span>, figure<span class="op">=</span>fig, wspace<span class="op">=</span><span class="fl">0.5</span>, hspace<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        ax <span class="op">=</span> fig.add_subplot(gs[i, j])</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        ax.set_title(<span class="ss">f'Row </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">, Col </span><span class="sc">{</span>j<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="matplotlib_gridspec_key_features 4_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="key_features_with_parameters_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="example-4-adjusting-margins-with-left-right-top-and-bottom" class="level4">
+<h4 class="anchored" data-anchor-id="example-4-adjusting-margins-with-left-right-top-and-bottom">Example 4: Adjusting Margins with <code>left</code>, <code>right</code>, <code>top</code>, and <code>bottom</code></h4>
+<div id="dbd88a15" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(nrows<span class="op">=</span><span class="dv">2</span>, ncols<span class="op">=</span><span class="dv">2</span>, figure<span class="op">=</span>fig, left<span class="op">=</span><span class="fl">0.1</span>, right<span class="op">=</span><span class="fl">0.9</span>, top<span class="op">=</span><span class="fl">0.9</span>, bottom<span class="op">=</span><span class="fl">0.1</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        ax <span class="op">=</span> fig.add_subplot(gs[i, j])</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        ax.set_title(<span class="ss">f'Plot (</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>j<span class="sc">}</span><span class="ss">)'</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="key_features_with_parameters_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="example-5-nested-grids-using-subplot_spec" class="level4">
+<h4 class="anchored" data-anchor-id="example-5-nested-grids-using-subplot_spec">Example 5: Nested Grids using <code>subplot_spec</code></h4>
+<div id="245ed6a4" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>outer_grid <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">1</span>, figure<span class="op">=</span>fig)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Main Plot</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>ax_main <span class="op">=</span> fig.add_subplot(outer_grid[<span class="dv">0</span>, <span class="dv">0</span>])</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>ax_main.set_title(<span class="st">'Main Plot'</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Nested Grid</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>inner_grid <span class="op">=</span> GridSpec(<span class="dv">1</span>, <span class="dv">3</span>, figure<span class="op">=</span>fig)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> fig.add_subplot(inner_grid[<span class="dv">0</span>, i])</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f'Nested </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="key_features_with_parameters_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 
 
+</section>
 </section>
 </section>
 
