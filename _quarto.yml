@@ -8,7 +8,7 @@ website:
     left:
       - href: matplotlib_gridspec_with_installation 3.ipynb
         text: HOME
-      - href: matplotlib_gridspec_key_features 4.ipynb
+      - href: key_features_with_parameters.ipynb
         text: Key Features
       - href: gridspec_use_cases 5.ipynb
         text: Use Cases 
