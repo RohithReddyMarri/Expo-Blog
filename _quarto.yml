@@ -12,6 +12,8 @@ website:
         text: Key Features
       - href: gridspec_use_cases 5.ipynb
         text: Use Cases 
+      - href: gridspec_conclusion_references 6.ipynb
+        text: References
   page-footer:
     center: "© J089"
 

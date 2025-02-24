@@ -1,6 +1,11 @@
 ---
-title: "Matplotlib.Gridspec"
-content: matplotlib_gridspec_with_installation 3
+title: "Welcome to My Expo Blog"
+format: html
 ---
+
+# Welcome to My Expo Blog
+
+Explore  `matplotlib.GridSpec`.
+Click the navigation links above to get started!
 
 
