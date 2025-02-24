@@ -4,7 +4,6 @@ project:
 
 website:
   title: "Matplotlib.Gridspec"
-  content: "matplotlib_gridspec_with_installation 3.ipynb"
   navbar:
     left:
       - href: matplotlib_gridspec_with_installation 3.ipynb

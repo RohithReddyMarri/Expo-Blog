@@ -1,10 +1,6 @@
 ---
-title: Quarto Template
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
+title: "Matplotlib.Gridspec"
+content: matplotlib_gridspec_with_installation 3
 ---
 
-Content !
+
