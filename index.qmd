@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Exposition Article on GridSpec"
+title: "Matplotlib.GridSpec"
 format: html
 author:
   - name: "Rohith Reddy Marri"
@@ -8,6 +8,7 @@ author:
     email: "24110393@iitgn.ac.in"
   - name: "Gugulothu Sai Siddhu"
     email: "24110124@iitgn.ac.in"
+date: '2025-02-25'
 ---
 
 # Welcome to Exposition Article on `matplotlib.GridSpec`
