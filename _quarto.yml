@@ -10,6 +10,8 @@ website:
         text: Home
       - href: blog.qmd
         text: Blog
+      - href: J089_Lab1_Numpy-checkpoint.ipynb
+        text: Assignment 
 
 
 format:
