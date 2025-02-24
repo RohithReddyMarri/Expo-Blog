@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rohith Reddy Marri">
+<meta name="author" content="Vunnam Thushar Chowdary">
+<meta name="author" content="Gugulothu Sai Siddhu">
+<meta name="dcterms.date" content="2025-02-25">
 
-<title>Quarto Template – Matplotlib.Gridspec</title>
+<title>Introduction and Installation – Matplotlib.Gridspec</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +24,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +68,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,65 +104,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -148,7 +126,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./matplotlib_gridspec_with_installation 3.html"> 
+    <a class="nav-link active" href="./matplotlib_gridspec_with_installation 3.html" aria-current="page"> 
 <span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
@@ -171,21 +149,51 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TUw=">ML <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-matplotlib.gridspec" id="toc-introduction-to-matplotlib.gridspec" class="nav-link active" data-scroll-target="#introduction-to-matplotlib.gridspec">Introduction to Matplotlib.GridSpec</a>
+  <ul class="collapse">
+  <li><a href="#why-use-gridspec" id="toc-why-use-gridspec" class="nav-link" data-scroll-target="#why-use-gridspec">Why Use GridSpec?</a></li>
+  <li><a href="#basic-structure" id="toc-basic-structure" class="nav-link" data-scroll-target="#basic-structure">Basic Structure</a></li>
+  <li><a href="#installation-guide" id="toc-installation-guide" class="nav-link" data-scroll-target="#installation-guide">Installation Guide</a>
+  <ul class="collapse">
+  <li><a href="#using-pip-recommended" id="toc-using-pip-recommended" class="nav-link" data-scroll-target="#using-pip-recommended">1. Using pip (Recommended)</a></li>
+  <li><a href="#using-conda-for-anaconda-users" id="toc-using-conda-for-anaconda-users" class="nav-link" data-scroll-target="#using-conda-for-anaconda-users">2. Using conda (For Anaconda Users)</a></li>
+  <li><a href="#installing-within-a-jupyter-notebook" id="toc-installing-within-a-jupyter-notebook" class="nav-link" data-scroll-target="#installing-within-a-jupyter-notebook">3. Installing within a Jupyter Notebook</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quarto Template</h1>
+<h1 class="title">Introduction and Installation</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Rohith Reddy Marri <a href="mailto:24110303@iitgn.ac.in" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p>Vunnam Thushar Chowdary <a href="mailto:24110393@iitgn.ac.in" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p>Gugulothu Sai Siddhu <a href="mailto:24110124@iitgn.ac.in" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 25, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -195,107 +203,46 @@ window.Quarto = {
 </header>
 
 
-<p>Content !</p>
+<section id="introduction-to-matplotlib.gridspec" class="level1">
+<h1>Introduction to Matplotlib.GridSpec</h1>
+<p>Matplotlib is a powerful library for creating visualizations in Python. One of its advanced features is <strong>GridSpec</strong>, which allows for precise control over subplot layouts. Unlike <code>plt.subplots()</code>, <code>GridSpec</code> offers greater flexibility, enabling plots to span multiple rows or columns.</p>
+<section id="why-use-gridspec" class="level3">
+<h3 class="anchored" data-anchor-id="why-use-gridspec">Why Use GridSpec?</h3>
+<ul>
+<li><strong>Flexible Layouts:</strong> Easily arrange subplots in complex configurations.</li>
+<li><strong>Precise Positioning:</strong> Control the exact size and location of each subplot.</li>
+<li><strong>Spanning Capability:</strong> Combine multiple grid cells into a single plot.</li>
+</ul>
+</section>
+<section id="basic-structure" class="level3">
+<h3 class="anchored" data-anchor-id="basic-structure">Basic Structure</h3>
+<p>A <code>GridSpec</code> is created by specifying the number of rows and columns. Each subplot is placed within this grid using its row and column indices. Additionally, subplots can span multiple rows or columns, allowing for dynamic and creative layouts.</p>
+<p>In the next section, we will explore practical examples of using <code>Matplotlib.GridSpec</code> to create visually appealing and well-structured plots.</p>
+</section>
+<section id="installation-guide" class="level2">
+<h2 class="anchored" data-anchor-id="installation-guide">Installation Guide</h2>
+<p>To use <code>Matplotlib.GridSpec</code>, you need to install the <code>matplotlib</code> library. Here are different ways to install it:</p>
+<section id="using-pip-recommended" class="level3">
+<h3 class="anchored" data-anchor-id="using-pip-recommended">1. Using pip (Recommended)</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install matplotlib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="using-conda-for-anaconda-users" class="level3">
+<h3 class="anchored" data-anchor-id="using-conda-for-anaconda-users">2. Using conda (For Anaconda Users)</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install matplotlib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="installing-within-a-jupyter-notebook" class="level3">
+<h3 class="anchored" data-anchor-id="installing-within-a-jupyter-notebook">3. Installing within a Jupyter Notebook</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install matplotlib</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>After installing, you can start using <code>GridSpec</code> by importing the library as follows:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.gridspec <span class="im">import</span> GridSpec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1739491200000" data-listing-file-modified-sort="1740420540938" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
-<div class="thumbnail">
-<p><a href="./posts/J089_Assignment_3-checkpoint.html" class="no-external"></a></p><a href="./posts/J089_Assignment_3-checkpoint.html" class="no-external">
-<p class="card-img-top"><img src="posts/J089_Assignment_3-checkpoint_files/figure-html/cell-4-output-2.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/J089_Assignment_3-checkpoint.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/J089_Assignment_3-checkpoint.html" class="no-external">Assignment 3</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/J089_Assignment_3-checkpoint.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/J089_Assignment_3-checkpoint.html" class="no-external">Area Based</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/J089_Assignment_3-checkpoint.html" class="no-external">
-<div class="listing-date">
-Feb 14, 2025
-</div>
-<div class="listing-author">
-Nipun Batra
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="TUw=" data-listing-date-sort="1739491200000" data-listing-file-modified-sort="1740420540938" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/visualisation.html" class="no-external"></a></p><a href="./posts/visualisation.html" class="no-external">
-<p class="card-img-top"><img src="posts/visualisation_files/figure-html/cell-3-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/visualisation.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/visualisation.html" class="no-external">Simple Visualisation</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/visualisation.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TUw='); return false;">
-ML
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/visualisation.html" class="no-external">My name is Billa</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/visualisation.html" class="no-external">
-<div class="listing-date">
-Feb 14, 2025
-</div>
-<div class="listing-author">
-Nipun Batra
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1739491200000" data-listing-file-modified-sort="1740420540938" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
-<div class="thumbnail">
-<p><a href="./posts/welcome.html" class="no-external"></a></p><a href="./posts/welcome.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/welcome.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome.html" class="no-external">Welcome</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome.html" class="no-external">Welcome Post</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome.html" class="no-external">
-<div class="listing-date">
-Feb 14, 2025
-</div>
-<div class="listing-author">
-Nipun Batra
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
