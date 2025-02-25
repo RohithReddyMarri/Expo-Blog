@@ -28,7 +28,7 @@ format:
     mainfont: "Roboto"
     code-copy: true
     code-overflow: wrap
-  format:
+
 
 execute:
   freeze: auto
