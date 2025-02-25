@@ -65,16 +65,16 @@
   {
     "objectID": "conclusion_acknowledgment 7.html",
     "href": "conclusion_acknowledgment 7.html",
-    "title": "Conclusion / Remarks",
+    "title": "Remarks",
     "section": "",
     "text": "matplotlib.GridSpec is a powerful tool for customizing subplot layouts, offering both flexibility and precision.\nIt allows for complex, nested grids and spanning plots, making it suitable for dashboards, reports, and comparative visualizations.\nWith adjustable spacing and sizing, GridSpec enhances both the aesthetics and readability of visual data representations."
   },
   {
     "objectID": "conclusion_acknowledgment 7.html#acknowledgment",
     "href": "conclusion_acknowledgment 7.html#acknowledgment",
-    "title": "Conclusion / Remarks",
+    "title": "Remarks",
     "section": "Acknowledgment",
-    "text": "Acknowledgment\nWe would like to express our sincere gratitude to everyone who contributed to this project:\n\nMentors: Prof. Nipun Batra and T.A Viraj for guiding us throughout the project and providing valuable insights.\nResources: The official matplotlib documentation and various online tutorials that helped us understand and implement GridSpec effectively.\n\nThis project was completed as part of our coursework ES 114 at IIT Gandhinagar, and we appreciate the opportunity to explore and apply advanced visualization techniques using Python."
+    "text": "Acknowledgment\nWe would like to express our sincere gratitude to everyone who contributed to this project:\n\nMentors: Prof. Nipun Batra and T.A Viraj Sir for guiding us throughout the project and providing valuable insights.\nResources: The official matplotlib.GridSpec documentation and various online tutorials that helped us understand and implement GridSpec effectively.\n\nThis project was completed as part of our coursework ES 114 at IIT Gandhinagarhttps://www.iitgn.ac.in/, and we appreciate the opportunity to explore and apply advanced visualization techniques using Python."
   },
   {
     "objectID": "matplotlib_gridspec_key_features 4.html",
@@ -130,7 +130,7 @@
     "href": "matplotlib_gridspec_with_installation 3.html",
     "title": "Introduction and Installation",
     "section": "",
-    "text": "Matplotlib is a powerful library for creating visualizations in Python. One of its advanced features is GridSpec, which allows for precise control over subplot layouts. Unlike plt.subplots(), GridSpec offers greater flexibility, enabling plots to span multiple rows or columns.\n\n\n\nFlexible Layouts: Easily arrange subplots in complex configurations.\nPrecise Positioning: Control the exact size and location of each subplot.\nSpanning Capability: Combine multiple grid cells into a single plot.\n\n\n\n\nA GridSpec is created by specifying the number of rows and columns. Each subplot is placed within this grid using its row and column indices. Additionally, subplots can span multiple rows or columns, allowing for dynamic and creative layouts.\n\n\n\nTo use Matplotlib.GridSpec, you need to install the matplotlib library. Here are different ways to install it using the Command Prompt in you device:\n\n\npip install matplotlib\n\n\n\nconda install matplotlib\n\n\n\n!pip install matplotlib\nAfter installing, you can start using GridSpec by importing the library as follows:\nimport matplotlib.pyplot as plt\nfrom matplotlib.gridspec import GridSpec"
+    "text": "Matplotlib is a powerful library for creating visualizations in Python.In Matplotlib, GridSpec is a class from the matplotlib.gridspec module that allows you to create complex and flexible subplot layouts. It works by dividing a figure into a grid of rows and columns, where each cell in the grid can be used to place a subplot. Unlike the traditional plt.subplots() method, GridSpec provides precise control over the positioning and size of each subplot, including the ability to span multiple rows or columns.\n\n\n\nFlexible Layouts: Easily arrange subplots in complex configurations.\nPrecise Positioning: Control the exact size and location of each subplot.\nSpanning Capability: Combine multiple grid cells into a single plot.\n\n\n\n\nA GridSpec is created by specifying the number of rows and columns. Each subplot is placed within this grid using its row and column indices. Additionally, subplots can span multiple rows or columns, allowing for dynamic and creative layouts.\n\n\n\nTo use Matplotlib.GridSpec, you need to install the matplotlib library. Here are different ways to install it using the Command Prompt in you device:\n\n\npip install matplotlib\n\n\n\nconda install matplotlib\n\n\n\n!pip install matplotlib\nAfter installing, you can start using GridSpec by importing the library as follows:\nimport matplotlib.pyplot as plt\nfrom matplotlib.gridspec import GridSpec"
   },
   {
     "objectID": "matplotlib_gridspec_with_installation 3.html#installation-guide",
