@@ -74,7 +74,7 @@
     "href": "conclusion_acknowledgment 7.html#acknowledgment",
     "title": "Remarks",
     "section": "Acknowledgment",
-    "text": "Acknowledgment\nWe would like to express our sincere gratitude to everyone who contributed to this project:\n\nMentors: Prof. Nipun Batra and T.A Viraj Sir for guiding us throughout the project and providing valuable insights.\nResources: The official matplotlib.GridSpec documentation and various online tutorials that helped us understand and implement GridSpec effectively.\n\nThis project was completed as part of our coursework ES 114 at IIT Gandhinagarhttps://www.iitgn.ac.in/, and we appreciate the opportunity to explore and apply advanced visualization techniques using Python."
+    "text": "Acknowledgment\nWe would like to express our sincere gratitude to everyone who contributed to this project:\n\nMentors: Prof. Nipun Batra and T.A Viraj Sir for guiding us throughout the project and providing valuable insights.\nResources: The official matplotlib.GridSpec documentation and various online tutorials that helped us understand and implement GridSpec effectively.\n\nThis project was completed as part of our coursework ES 114 at IIT Gandhinagar, and we appreciate the opportunity to explore and apply advanced visualization techniques using Python."
   },
   {
     "objectID": "matplotlib_gridspec_key_features 4.html",
