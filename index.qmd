@@ -48,5 +48,5 @@ After installing, you can start using `GridSpec` by importing the library as fol
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 ```
-
+Click on the Navigation Bars present above to navigate through **Key Features**,**References** and **Takeaways**
 
