@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "`Matplotlib.Gridspec`"
+  title: "Matplotlib.Gridspec"
   navbar:
     left:
       - href: matplotlib_gridspec_with_installation 3.ipynb
