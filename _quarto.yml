@@ -3,17 +3,17 @@ project:
   output-dir: docs
 
 website:
-  title: "Matplotlib.Gridspec"
+  title: "`Matplotlib.Gridspec`"
   navbar:
     left:
       - href: matplotlib_gridspec_with_installation 3.ipynb
         text: HOME
       - href: key_features_with_parameters.ipynb
-        text: Key Features
+        text: Key Features|Parameters
       - href: gridspec_use_cases 5.ipynb
         text: Use Cases 
       - href: gridspec_conclusion_references 6.ipynb
-        text: References
+        text: Conclusion|References
       - href: conclusion_acknowledgment 7.ipynb
         text: Takeaways
   page-footer:
@@ -28,7 +28,7 @@ format:
     mainfont: "Roboto"
     code-copy: true
     code-overflow: wrap
-
+  format:
 
 execute:
   freeze: auto
